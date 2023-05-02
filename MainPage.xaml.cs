@@ -5,22 +5,22 @@ namespace PhoneApp;
 public partial class MainPage : ContentPage
 {
 
+	private MainClass _vm; 
+	
 	public MainPage()
 	{
 		InitializeComponent();
-	}
 
+		BindingContext = _vm = new MainClass();
+	}
+	
 	private void SaveClick(object sender, EventArgs e)
 	{
-		MainClass.name = NameText.Text;
-		MainClass.surname = SurnameText.Text;
-		MainClass.date = DatePic.Date;
+		_vm.SaveClick();
 	}
     private void RecoveryClick(object sender, EventArgs e)
     {
-		NameText.Text = MainClass.name;
-		SurnameText.Text = MainClass.surname;
-		DatePic.Date = MainClass.date;
+	    _vm.RecoveryClick();
     }
 }
 

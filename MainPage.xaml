@@ -8,23 +8,23 @@
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
-        <Entry x:Name="NameText"
-            Text="{Binding NameFill}" 
+        <Entry 
+            Text="{Binding name}" 
             Placeholder="Введите Ваше имя" />
 
-        <Entry x:Name="SurnameText"
-            Text="{Binding SurnameFill}" 
+        <Entry 
+            Text="{Binding surname}" 
             Placeholder="Введите Вашу фамилию" />
 
-        <DatePicker x:Name="DatePic"
-            Date="{Binding DateFill}"/>
+        <DatePicker 
+            Date="{Binding date}"/>
 
         <StackLayout Orientation="Horizontal">
-            <Button x:Name="SaveButton"
+            <Button 
                 Text="Сохранить" 
                 Clicked="SaveClick" />
 
-            <Button x:Name="RecoveryButton"
+            <Button
                 Text="Восстановить" 
                 Clicked="RecoveryClick" />
 
