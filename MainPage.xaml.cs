@@ -11,16 +11,7 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
 
-		BindingContext = _vm = new MainClass();
+		BindingContext = new MainViewModel();
 	}
-	
-	private void SaveClick(object sender, EventArgs e)
-	{
-		_vm.SaveClick();
-	}
-    private void RecoveryClick(object sender, EventArgs e)
-    {
-	    _vm.RecoveryClick();
-    }
 }
 

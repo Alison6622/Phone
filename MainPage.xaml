@@ -9,24 +9,24 @@
             Padding="30,0"
             VerticalOptions="Center">
         <Entry 
-            Text="{Binding name}" 
+            Text="{Binding Name}" 
             Placeholder="Введите Ваше имя" />
 
         <Entry 
-            Text="{Binding surname}" 
+            Text="{Binding Surname}" 
             Placeholder="Введите Вашу фамилию" />
 
         <DatePicker 
-            Date="{Binding date}"/>
+            Date="{Binding Date}"/>
 
         <StackLayout Orientation="Horizontal">
             <Button 
-                Text="Сохранить" 
-                Clicked="SaveClick" />
+                Text="Сохранить"
+                Command="{Binding SaveCommand}"/>
 
             <Button
                 Text="Восстановить" 
-                Clicked="RecoveryClick" />
+                Command="{Binding RecoveryCommand}" />
 
         </StackLayout>
 

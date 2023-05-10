@@ -1,0 +1,1 @@
+D:\vsapp\PhoneApp\PhoneApp.csproj;x64
